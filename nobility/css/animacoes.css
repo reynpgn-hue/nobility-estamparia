@@ -1,0 +1,33 @@
+/* ============================================================
+   ANIMACOES.CSS — Fade-in de scroll e micro-interações
+   ============================================================ */
+
+/* Elementos que aparecem ao rolar a página */
+.fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.65s ease, transform 0.65s ease;
+}
+
+.fade-up.visivel {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Delay escalonado para cards */
+.fade-up:nth-child(1) { transition-delay: 0s;    }
+.fade-up:nth-child(2) { transition-delay: 0.1s;  }
+.fade-up:nth-child(3) { transition-delay: 0.2s;  }
+.fade-up:nth-child(4) { transition-delay: 0.3s;  }
+
+/* Animação do hero na carga */
+@keyframes subirFadeIn {
+  from { opacity: 0; transform: translateY(28px); }
+  to   { opacity: 1; transform: translateY(0);    }
+}
+
+.hero__tag        { animation: subirFadeIn 0.7s ease 0.0s both; }
+.hero__titulo     { animation: subirFadeIn 0.7s ease 0.1s both; }
+.hero__descricao  { animation: subirFadeIn 0.7s ease 0.2s both; }
+.hero__botoes     { animation: subirFadeIn 0.7s ease 0.3s both; }
+.hero__stats      { animation: subirFadeIn 0.7s ease 0.4s both; }

@@ -1,0 +1,114 @@
+/* ============================================================
+   RESPONSIVO.CSS — Breakpoints e ajustes mobile
+   ============================================================ */
+
+/* ── Tablet (≤ 900px) ── */
+@media (max-width: 900px) {
+  .sobre {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: var(--espaco-xl) 24px;
+  }
+
+  .footer__top {
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+}
+
+/* ── Mobile (≤ 640px) ── */
+@media (max-width: 640px) {
+  /* Header */
+  .header {
+    padding: 14px 20px;
+  }
+
+  .header__nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.97);
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 24px 28px;
+    gap: 20px;
+    border-bottom: 1px solid rgba(255,199,0,0.15);
+  }
+
+  .header__menu-toggle {
+    display: flex;
+  }
+
+  /* Hero */
+  .hero {
+    padding: 100px 20px 60px;
+  }
+
+  .hero__stats {
+    gap: 28px;
+  }
+
+  /* Produtos */
+  .produtos {
+    padding: var(--espaco-xl) 16px;
+  }
+
+  .produtos__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card__rodape {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+  }
+
+  .card__botoes {
+    flex-direction: row;
+    min-width: unset;
+    width: 100%;
+  }
+
+  .btn-comprar,
+  .btn-zap {
+    flex: 1;
+    text-align: center;
+  }
+
+  /* Sobre */
+  .sobre {
+    padding: var(--espaco-lg) 16px;
+  }
+
+  /* Banner CTA */
+  .banner-cta {
+    padding: var(--espaco-xl) 16px;
+  }
+
+  /* Footer */
+  .footer {
+    padding: var(--espaco-lg) 16px var(--espaco-sm);
+  }
+
+  .footer__top {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  /* WhatsApp fixo — esconde o texto no mobile */
+  .whatsapp-fixo__texto {
+    display: none;
+  }
+
+  .whatsapp-fixo {
+    padding: 14px;
+    border-radius: 50%;
+  }
+}

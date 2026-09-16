@@ -1,0 +1,94 @@
+/* ============================================================
+   HERO.CSS — Seção de abertura / banner principal
+   ============================================================ */
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 120px 24px 80px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Fundo gradiente decorativo */
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 70% 60% at 50% 50%, rgba(255,199,0,0.07) 0%, transparent 70%),
+    radial-gradient(ellipse 30% 40% at 80% 20%, rgba(255,199,0,0.04) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+.hero__tag {
+  display: inline-block;
+  font-size: 0.72rem;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: var(--cor-amarelo);
+  border: 1px solid rgba(255,199,0,0.3);
+  padding: 5px 18px;
+  border-radius: 20px;
+  margin-bottom: 28px;
+}
+
+.hero__titulo {
+  font-size: clamp(2.8rem, 7vw, 5.5rem);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.hero__titulo em {
+  font-style: italic;
+  color: var(--cor-amarelo);
+}
+
+.hero__descricao {
+  font-size: 1.05rem;
+  color: var(--cor-cinza-claro);
+  max-width: 560px;
+  margin: 0 auto 40px;
+  line-height: 1.75;
+}
+
+.hero__botoes {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Bloco de estatísticas */
+.hero__stats {
+  display: flex;
+  gap: 56px;
+  justify-content: center;
+  margin-top: 64px;
+  padding-top: 36px;
+  border-top: 1px solid rgba(255,199,0,0.15);
+  flex-wrap: wrap;
+}
+
+.stat__numero {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--cor-amarelo);
+  line-height: 1;
+}
+
+.stat__label {
+  display: block;
+  font-size: 0.68rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--cor-cinza);
+  margin-top: 5px;
+}

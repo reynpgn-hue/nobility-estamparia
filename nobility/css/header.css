@@ -1,0 +1,110 @@
+/* ============================================================
+   HEADER.CSS — Barra de navegação fixa
+   ============================================================ */
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 48px;
+  background: rgba(0, 0, 0, 0.9);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 199, 0, 0.15);
+  transition: padding var(--transicao);
+}
+
+/* Logo */
+.header__logo {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.header__logo-nome {
+  color: var(--cor-amarelo);
+  font-size: 1.55rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.header__logo-sub {
+  font-size: 0.6rem;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--cor-cinza);
+}
+
+/* Nav links */
+.header__nav {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+}
+
+.header__nav a {
+  color: var(--cor-cinza-claro);
+  font-weight: 600;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  transition: color var(--transicao);
+  position: relative;
+}
+
+.header__nav a::after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--cor-amarelo);
+  transition: width var(--transicao);
+}
+
+.header__nav a:hover {
+  color: var(--cor-amarelo);
+}
+
+.header__nav a:hover::after {
+  width: 100%;
+}
+
+/* Botão CTA no nav */
+.header__nav .btn-primario {
+  padding: 9px 22px;
+  font-size: 0.8rem;
+}
+
+.header__nav .btn-primario::after {
+  display: none;
+}
+
+/* Menu hamburguer (mobile) */
+.header__menu-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.header__menu-toggle span {
+  display: block;
+  width: 26px;
+  height: 2px;
+  background: var(--cor-amarelo);
+  border-radius: 2px;
+  transition: transform var(--transicao), opacity var(--transicao);
+}
+
+/* Estado aberto do menu mobile */
+.header__nav.aberto {
+  display: flex;
+}

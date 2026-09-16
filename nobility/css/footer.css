@@ -1,0 +1,119 @@
+/* ============================================================
+   FOOTER.CSS — Rodapé e botão flutuante do WhatsApp
+   ============================================================ */
+
+/* ── FOOTER ── */
+.footer {
+  background: var(--cor-preto-2);
+  border-top: 1px solid rgba(255,199,0,0.1);
+  padding: var(--espaco-xl) 48px var(--espaco-md);
+}
+
+.footer__top {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr;
+  gap: 48px;
+  margin-bottom: 40px;
+}
+
+.footer__marca-nome {
+  color: var(--cor-amarelo);
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.footer__marca-sub {
+  font-size: 0.58rem;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--cor-cinza);
+  display: block;
+  margin-bottom: 14px;
+}
+
+.footer__marca-desc {
+  font-size: 0.83rem;
+  color: var(--cor-cinza);
+  line-height: 1.7;
+  max-width: 260px;
+}
+
+.footer__col-titulo {
+  font-size: 0.68rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--cor-amarelo);
+  margin-bottom: 18px;
+}
+
+.footer__col a {
+  display: block;
+  color: var(--cor-cinza);
+  font-size: 0.85rem;
+  margin-bottom: 10px;
+  transition: color var(--transicao);
+}
+
+.footer__col a:hover {
+  color: var(--cor-branco);
+}
+
+.footer__bottom {
+  border-top: 1px solid rgba(255,255,255,0.06);
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.footer__copyright,
+.footer__pagamentos {
+  font-size: 0.78rem;
+  color: var(--cor-cinza);
+}
+
+.footer__pagamentos span {
+  color: var(--cor-amarelo);
+}
+
+/* ── BOTÃO WHATSAPP FIXO ── */
+.whatsapp-fixo {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--cor-verde-zap);
+  color: #fff;
+  padding: 13px 20px 13px 16px;
+  border-radius: 50px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.45);
+  transition: transform var(--transicao), box-shadow var(--transicao);
+  animation: pulso-zap 2.5s ease infinite;
+}
+
+.whatsapp-fixo:hover {
+  transform: scale(1.06);
+  box-shadow: 0 6px 28px rgba(37, 211, 102, 0.6);
+}
+
+.whatsapp-fixo svg {
+  width: 20px;
+  height: 20px;
+  fill: #fff;
+  flex-shrink: 0;
+}
+
+@keyframes pulso-zap {
+  0%, 100% { box-shadow: 0 4px 20px rgba(37, 211, 102, 0.45); }
+  50%       { box-shadow: 0 4px 36px rgba(37, 211, 102, 0.7);  }
+}

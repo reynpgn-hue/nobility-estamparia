@@ -1,0 +1,163 @@
+/* ============================================================
+   SECOES.CSS — Sobre, Banner CTA e outras seções internas
+   ============================================================ */
+
+/* ── SOBRE ── */
+.sobre {
+  padding: var(--espaco-2xl) 48px;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 72px;
+  align-items: center;
+}
+
+.sobre__tag {
+  font-size: 0.68rem;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: var(--cor-amarelo);
+  margin-bottom: 14px;
+}
+
+.sobre__titulo {
+  font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.sobre__titulo em {
+  color: var(--cor-amarelo);
+  font-style: italic;
+}
+
+.sobre__texto {
+  color: var(--cor-cinza-claro);
+  font-size: 0.93rem;
+  line-height: 1.8;
+  margin-bottom: 14px;
+}
+
+/* Features/diferenciais */
+.sobre__features {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 28px;
+}
+
+.feature {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.feature__icone {
+  width: 38px;
+  height: 38px;
+  background: rgba(255,199,0,0.1);
+  border: 1px solid rgba(255,199,0,0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.feature__titulo {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--cor-branco);
+  margin-bottom: 2px;
+}
+
+.feature__desc {
+  font-size: 0.8rem;
+  color: var(--cor-cinza);
+}
+
+/* Visual/citação do lado direito */
+.sobre__visual {
+  background: var(--cor-preto-card);
+  border: 1px solid rgba(255,199,0,0.12);
+  border-radius: var(--raio-card);
+  padding: 48px 36px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.sobre__visual::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--cor-amarelo), transparent);
+}
+
+.sobre__logo-img {
+  max-width: 220px;
+  margin: 0 auto 24px;
+  filter: drop-shadow(0 0 12px rgba(255,199,0,0.25));
+}
+
+.sobre__citacao {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: var(--cor-amarelo);
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+.sobre__citacao-autor {
+  font-size: 0.7rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--cor-cinza);
+}
+
+/* ── BANNER CTA ── */
+.banner-cta {
+  padding: var(--espaco-2xl) 24px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.banner-cta::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 60% 80% at 50% 50%, rgba(255,199,0,0.09) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.banner-cta__conteudo {
+  position: relative;
+  z-index: 1;
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.banner-cta__titulo {
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+.banner-cta__titulo em {
+  color: var(--cor-amarelo);
+  font-style: italic;
+}
+
+.banner-cta__texto {
+  color: var(--cor-cinza-claro);
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 36px;
+}

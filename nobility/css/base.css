@@ -1,0 +1,86 @@
+/* ============================================================
+   BASE.CSS — Reset, tipografia e estilos globais do corpo
+   ============================================================ */
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--cor-preto);
+  color: var(--cor-branco);
+  font-family: var(--fonte-principal);
+  font-weight: 400;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/* -- Utilitários de texto -- */
+.texto-amarelo { color: var(--cor-amarelo); }
+.texto-centro  { text-align: center; }
+
+/* -- Botão padrão -- */
+.btn {
+  display: inline-block;
+  padding: 13px 30px;
+  border-radius: var(--raio-btn);
+  font-family: var(--fonte-principal);
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  border: none;
+  transition: transform var(--transicao), box-shadow var(--transicao), background var(--transicao);
+}
+
+.btn-primario {
+  background-color: var(--cor-amarelo);
+  color: var(--cor-preto);
+}
+
+.btn-primario:hover {
+  background-color: var(--cor-amarelo-hover);
+  transform: translateY(-2px);
+  box-shadow: var(--sombra-btn);
+}
+
+.btn-contorno {
+  background: transparent;
+  color: var(--cor-branco);
+  border: 2px solid var(--cor-amarelo);
+}
+
+.btn-contorno:hover {
+  background: var(--cor-amarelo);
+  color: var(--cor-preto);
+  transform: translateY(-2px);
+}
+
+/* -- Divisor decorativo -- */
+.divisor {
+  width: 60px;
+  height: 3px;
+  background: var(--cor-amarelo);
+  margin: 0 auto var(--espaco-md);
+  border-radius: 2px;
+}

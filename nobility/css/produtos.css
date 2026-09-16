@@ -1,0 +1,203 @@
+/* ============================================================
+   PRODUTOS.CSS — Grid e cards de produto
+   ============================================================ */
+
+.produtos {
+  padding: var(--espaco-2xl) 48px;
+  background: var(--cor-preto-2);
+}
+
+/* Cabeçalho de seção genérico */
+.secao__cabecalho {
+  text-align: center;
+  margin-bottom: var(--espaco-xl);
+}
+
+.secao__tag {
+  display: block;
+  font-size: 0.68rem;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: var(--cor-amarelo);
+  margin-bottom: 12px;
+}
+
+.secao__titulo {
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.secao__titulo em {
+  color: var(--cor-amarelo);
+  font-style: italic;
+}
+
+.secao__subtitulo {
+  color: var(--cor-cinza);
+  margin-top: 10px;
+  font-size: 0.92rem;
+}
+
+/* Grid de produtos */
+.produtos__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: 28px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Card individual */
+.card {
+  background: var(--cor-preto-card);
+  border: 1px solid rgba(255, 199, 0, 0.08);
+  border-radius: var(--raio-card);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: transform var(--transicao), border-color var(--transicao), box-shadow var(--transicao);
+}
+
+.card:hover {
+  transform: translateY(-7px);
+  border-color: rgba(255, 199, 0, 0.35);
+  box-shadow: var(--sombra-card);
+}
+
+/* Selo (badge) */
+.card__badge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  background: var(--cor-amarelo);
+  color: var(--cor-preto);
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 20px;
+  z-index: 2;
+}
+
+.card__badge--novo {
+  background: #2ecc71;
+  color: #fff;
+}
+
+/* Área da imagem */
+.card__img-wrapper {
+  aspect-ratio: 1 / 1;
+  background: #161616;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card__img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.45s ease;
+}
+
+.card:hover .card__img-wrapper img {
+  transform: scale(1.07);
+}
+
+/* Placeholder quando sem imagem */
+.card__placeholder {
+  font-size: 4.5rem;
+  opacity: 0.2;
+}
+
+/* Corpo do card */
+.card__corpo {
+  padding: 22px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.card__nome {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--cor-amarelo);
+  margin-bottom: 6px;
+}
+
+.card__descricao {
+  font-size: 0.83rem;
+  color: var(--cor-cinza-claro);
+  line-height: 1.6;
+  flex: 1;
+  margin-bottom: 18px;
+}
+
+/* Rodapé do card: preço + botões */
+.card__rodape {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  border-top: 1px solid rgba(255,199,0,0.1);
+  padding-top: 16px;
+}
+
+.preco__de {
+  display: block;
+  font-size: 0.72rem;
+  color: var(--cor-cinza);
+  text-decoration: line-through;
+}
+
+.preco__por {
+  display: block;
+  font-size: 1.45rem;
+  font-weight: 700;
+  color: var(--cor-amarelo);
+  line-height: 1;
+}
+
+.card__botoes {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  min-width: 115px;
+}
+
+.btn-comprar {
+  background: var(--cor-amarelo);
+  color: var(--cor-preto);
+  padding: 9px 14px;
+  border-radius: 20px;
+  font-size: 0.73rem;
+  font-weight: 700;
+  text-align: center;
+  transition: background var(--transicao), transform var(--transicao);
+}
+
+.btn-comprar:hover {
+  background: var(--cor-amarelo-hover);
+  transform: translateY(-1px);
+}
+
+.btn-zap {
+  background: transparent;
+  color: var(--cor-verde-zap);
+  border: 1px solid var(--cor-verde-zap);
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 0.73rem;
+  font-weight: 600;
+  text-align: center;
+  transition: background var(--transicao), color var(--transicao);
+}
+
+.btn-zap:hover {
+  background: var(--cor-verde-zap);
+  color: #fff;
+}

@@ -1,0 +1,38 @@
+/* ============================================================
+   VARIABLES.CSS — Tokens de design globais da Nobility
+   Altere aqui para mudar cores/fontes em todo o site.
+   ============================================================ */
+
+:root {
+  /* -- Cores principais -- */
+  --cor-preto:        #000000;
+  --cor-preto-2:      #0f0f0f;
+  --cor-preto-card:   #111111;
+  --cor-amarelo:      #FFC700;
+  --cor-amarelo-hover:#FFD740;
+  --cor-branco:       #FFFFFF;
+  --cor-cinza:        #888888;
+  --cor-cinza-claro:  #cccccc;
+  --cor-verde-zap:    #25D366;
+  --cor-verde-zap-hover: #1ebe59;
+
+  /* -- Tipografia -- */
+  --fonte-principal: 'Poppins', sans-serif;
+
+  /* -- Espaçamentos -- */
+  --espaco-xs:   8px;
+  --espaco-sm:  16px;
+  --espaco-md:  24px;
+  --espaco-lg:  40px;
+  --espaco-xl:  60px;
+  --espaco-2xl: 80px;
+
+  /* -- Bordas e sombras -- */
+  --raio-card:   16px;
+  --raio-btn:    30px;
+  --sombra-btn:  0 6px 20px rgba(255, 199, 0, 0.35);
+  --sombra-card: 0 8px 32px rgba(0, 0, 0, 0.5);
+
+  /* -- Transições -- */
+  --transicao: 0.25s ease;
+}

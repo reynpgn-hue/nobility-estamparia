@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Nobility Estamparia — Moda urbana premium com estampas exclusivas e algodão de alta qualidade. Belford Roxo, RJ." />
+  <title>Nobility Estamparia | Moda Urbana Premium</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="img/favicon.png" type="image/png" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Estilos (ordem importa: variáveis → base → componentes → responsivo) -->
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/header.css" />
+  <link rel="stylesheet" href="css/hero.css" />
+  <link rel="stylesheet" href="css/produtos.css" />
+  <link rel="stylesheet" href="css/secoes.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+  <link rel="stylesheet" href="css/animacoes.css" />
+  <link rel="stylesheet" href="css/responsivo.css" />
+</head>
+
+<body>
+
+  <!-- ══════════════════════════════════════════════
+       HEADER — Navegação fixa
+  ══════════════════════════════════════════════ -->
+  <header class="header" role="banner">
+    <div class="header__logo">
+      <span class="header__logo-nome">Nobility</span>
+      <span class="header__logo-sub">Estamparia</span>
+    </div>
+
+    <!-- Hamburguer (mobile) -->
+    <button class="header__menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="header__nav" role="navigation" aria-label="Menu principal">
+      <a href="#inicio">Início</a>
+      <a href="#produtos">Coleção</a>
+      <a href="#sobre">Sobre</a>
+      <a href="https://wa.me/5521974179942
+" target="_blank" rel="noopener"
+         class="btn btn-primario">WhatsApp</a>
+    </nav>
+  </header>
+
+
+  <!-- ══════════════════════════════════════════════
+       HERO — Seção principal
+  ══════════════════════════════════════════════ -->
+  <section class="hero" id="inicio" aria-label="Apresentação">
+    <span class="hero__tag">✦ Coleção 2026</span>
+
+    <h1 class="hero__titulo">
+      Vista-se com<br><em>nobreza</em>
+    </h1>
+
+    <p class="hero__descricao">
+      Moda urbana premium com estampas exclusivas em DTF,
+      algodão 100% e acabamento que dura.
+    </p>
+
+    <div class="hero__botoes">
+      <a href="#produtos" class="btn btn-primario">Ver Coleção</a>
+      <a href="https://wa.me/5521974179942" target="_blank" rel="noopener"
+         class="btn btn-contorno">Falar no WhatsApp</a>
+    </div>
+
+    <div class="hero__stats" aria-label="Números da Nobility">
+      <div class="stat">
+        <span class="stat__numero">500+</span>
+        <span class="stat__label">Clientes</span>
+      </div>
+      <div class="stat">
+        <span class="stat__numero">100%</span>
+        <span class="stat__label">Algodão</span>
+      </div>
+      <div class="stat">
+        <span class="stat__numero">DTF</span>
+        <span class="stat__label">Estampa</span>
+      </div>
+      <div class="stat">
+        <span class="stat__numero">48h</span>
+        <span class="stat__label">Entrega</span>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════════
+       PRODUTOS — Coleção
+  ══════════════════════════════════════════════ -->
+  <section class="produtos" id="produtos" aria-label="Nossos produtos">
+    <div class="secao__cabecalho fade-up">
+      <span class="secao__tag">✦ Coleção</span>
+      <h2 class="secao__titulo">Nossos <em>Produtos</em></h2>
+      <p class="secao__subtitulo">Cada peça é única. Escolha a sua.</p>
+    </div>
+
+    <div class="produtos__grid">
+
+      <!-- ── CARD 1 ── -->
+      <article class="card fade-up" aria-label="Camiseta Premium">
+        <span class="card__badge">Mais Vendido</span>
+        <div class="card__img-wrapper">
+          <img src="img/nblt.jpg" alt="Camiseta Premium Nobility"
+               loading="lazy" />
+          <!-- Placeholder exibido se a imagem falhar -->
+          <div class="card__placeholder" aria-hidden="true" style="display:none">👕</div>
+        </div>
+        <div class="card__corpo">
+          <h3 class="card__nome">Camiseta Premium</h3>
+          <p class="card__descricao">
+            Algodão 100%, estampa em DTF de alta resolução e caimento perfeito.
+            O clássico que nunca sai de moda.
+          </p>
+          <div class="card__rodape">
+            <div class="preco" aria-label="Preço">
+              <span class="preco__de">R$ 99,90</span>
+              <span class="preco__por">R$ 79,90</span>
+            </div>
+            <div class="card__botoes">
+              <a class="btn-comprar"
+                 href="https://mpago.la/SEU-LINK-AQUI"
+                 target="_blank" rel="noopener">Comprar</a>
+              <a class="btn-zap"
+                 href="https://wa.me/5521974179942?text=Olá!%20Quero%20a%20Camiseta%20Premium"
+                 target="_blank" rel="noopener">WhatsApp</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- ── CARD 2 ── -->
+      <article class="card fade-up" aria-label="Linha Feminina">
+        <span class="card__badge card__badge--novo">Novo</span>
+        <div class="card__img-wrapper">
+          <img src="img/nmf.jpg" alt="Linha Feminina Nobility"
+               loading="lazy" />
+          <div class="card__placeholder" aria-hidden="true" style="display:none">👗</div>
+        </div>
+        <div class="card__corpo">
+          <h3 class="card__nome">Linha Feminina</h3>
+          <p class="card__descricao">
+            Novidade em parceria com <strong>@nobilitymodafeminina</strong>.
+            Estilo, identidade e exclusividade para ela.
+          </p>
+          <div class="card__rodape">
+            <div class="preco">
+              <span class="preco__por">R$ 89,90</span>
+            </div>
+            <div class="card__botoes">
+              <a class="btn-comprar"
+                 href="https://mpago.la/SEU-LINK-AQUI"
+                 target="_blank" rel="noopener">Comprar</a>
+              <a class="btn-zap"
+                 href="https://wa.me/5521974179942?text=Olá!%20Quero%20a%20Linha%20Feminina"
+                 target="_blank" rel="noopener">WhatsApp</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- ── CARD 3 ── -->
+      <article class="card fade-up" aria-label="Estampa Personalizada">
+        <div class="card__img-wrapper">
+          <img src="img/a.jpg" alt="Estampa Personalizada Nobility"
+               loading="lazy" />
+          <div class="card__placeholder" aria-hidden="true" style="display:none">🎨</div>
+        </div>
+        <div class="card__corpo">
+          <h3 class="card__nome">Estampa Personalizada</h3>
+          <p class="card__descricao">
+            Criamos sua identidade com estampas exclusivas — para grupos,
+            igrejas, empresas e eventos. Faça seu orçamento!
+          </p>
+          <div class="card__rodape">
+            <div class="preco">
+              <span class="preco__por">Sob consulta</span>
+            </div>
+            <div class="card__botoes">
+              <a class="btn-zap"
+                 href="https://wa.me/5521974179942?text=Olá!%20Quero%20um%20orçamento%20de%20estampa%20personalizada"
+                 target="_blank" rel="noopener"
+                 style="flex:1">Solicitar</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+    </div><!-- /produtos__grid -->
+  </section>
+
+
+  <!-- ══════════════════════════════════════════════
+       SOBRE — História da marca
+  ══════════════════════════════════════════════ -->
+  <section id="sobre" aria-label="Sobre a Nobility">
+    <div class="sobre">
+      <!-- Texto -->
+      <div class="sobre__conteudo fade-up">
+        <p class="sobre__tag">✦ Nossa história</p>
+        <h2 class="sobre__titulo">
+          Exclusividade<br>em cada <em>detalhe</em>
+        </h2>
+        <p class="sobre__texto">
+          A Nobility nasceu da vontade de oferecer algo além do comum:
+          peças com identidade, caráter e acabamento que falam por si.
+        </p>
+        <p class="sobre__texto">
+          Cada estampa é pensada para quem quer se destacar sem abrir mão
+          da qualidade. Algodão premium, DTF de alta resolução, corte que valoriza.
+        </p>
+
+        <div class="sobre__features">
+          <div class="feature">
+            <div class="feature__icone" aria-hidden="true">👕</div>
+            <div>
+              <span class="feature__titulo">Algodão Premium</span>
+              <span class="feature__desc">Tecido de alta qualidade, confortável e durável</span>
+            </div>
+          </div>
+          <div class="feature">
+            <div class="feature__icone" aria-hidden="true">🎨</div>
+            <div>
+              <span class="feature__titulo">Estampa DTF</span>
+              <span class="feature__desc">Alta resolução e cores vivas que não desbotam</span>
+            </div>
+          </div>
+          <div class="feature">
+            <div class="feature__icone" aria-hidden="true">🚚</div>
+            <div>
+              <span class="feature__titulo">Entrega Rápida</span>
+              <span class="feature__desc">Enviamos em até 48h após confirmação</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Visual / logo -->
+      <div class="sobre__visual fade-up" aria-hidden="true">
+        <img src="img/logo-nobility.png"
+             alt="Logo Nobility Estamparia"
+             class="sobre__logo-img"
+             onerror="this.style.display='none'" />
+        <p class="sobre__citacao">
+          "Quem veste Nobility<br>não precisa gritar<br>pra ser notado."
+        </p>
+        <p class="sobre__citacao-autor">— Nobility Estamparia</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════════
+       BANNER CTA — Encomendas personalizadas
+  ══════════════════════════════════════════════ -->
+  <section class="banner-cta" aria-label="Pedido personalizado">
+    <div class="banner-cta__conteudo fade-up">
+      <h2 class="banner-cta__titulo">
+        Quer algo <em>personalizado?</em>
+      </h2>
+      <p class="banner-cta__texto">
+        Fazemos estampas sob encomenda para grupos, empresas e eventos.
+        Fale com a gente e traga sua ideia — a gente realiza.
+      </p>
+      <a href="https://wa.me/5521974179942?text=Olá!%20Quero%20uma%20estampa%20personalizada"
+         target="_blank" rel="noopener"
+         class="btn btn-primario">
+        Pedir Orçamento no WhatsApp
+      </a>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════════ -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer__top">
+      <!-- Marca -->
+      <div>
+        <span class="footer__marca-nome">Nobility</span>
+        <span class="footer__marca-sub">Estamparia</span>
+        <p class="footer__marca-desc">
+          Moda urbana premium com estampas exclusivas.
+          Qualidade, identidade e nobreza em cada peça.
+          Belford Roxo — RJ.
+        </p>
+      </div>
+
+      <!-- Navegação -->
+      <div class="footer__col">
+        <p class="footer__col-titulo">Navegação</p>
+        <a href="#inicio">Início</a>
+        <a href="#produtos">Coleção</a>
+        <a href="#sobre">Sobre</a>
+        <a href="https://wa.me/5521974179942" target="_blank" rel="noopener">Contato</a>
+      </div>
+
+      <!-- Atendimento -->
+      <div class="footer__col">
+        <p class="footer__col-titulo">Atendimento</p>
+        <a href="https://wa.me/5521974179942" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="https://instagram.com/nobilityestamparia" target="_blank" rel="noopener">Instagram</a>
+        <a href="#">Trocas e Devoluções</a>
+        <a href="#">Tamanhos</a>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p class="footer__copyright">
+        © 2026 <strong style="color:var(--cor-amarelo)">Nobility Estamparia</strong>
+        — Todos os direitos reservados
+      </p>
+      <p class="footer__pagamentos">
+        Aceito: <span>Pix · Cartão · Mercado Pago</span>
+      </p>
+    </div>
+  </footer>
+
+
+  <!-- ══════════════════════════════════════════════
+       BOTÃO WHATSAPP FIXO
+  ══════════════════════════════════════════════ -->
+  <a class="whatsapp-fixo"
+     href="https://wa.me/5521974179942"
+     target="_blank"
+     rel="noopener"
+     aria-label="Falar no WhatsApp">
+    <!-- Ícone SVG oficial do WhatsApp -->
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+    <span class="whatsapp-fixo__texto">Comprar agora</span>
+  </a>
+
+
+  <!-- JavaScript (carregado no fim para não travar o render) -->
+  <script src="js/main.js" defer></script>
+
+</body>
+</html>
